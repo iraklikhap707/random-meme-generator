@@ -5,7 +5,7 @@
 
 async function changeMeme() {
     const apiKey = '8c95967184204b52af0dc4eb2a0595e6';
-    const apiUrl = 'https://corsproxy.io/?https://api.apileague.com/retrieve-random-meme?';
+    const apiUrl = 'https://api.apileague.com/retrieve-random-meme?';
     
     const response = await fetch(apiUrl, { headers: {'x-api-key': apiKey}});
     const data = await response.json();
