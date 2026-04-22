@@ -3,11 +3,22 @@
 // ✅ სწორი
 
 
-async function changeMeme() {
-    const apiKey = '8c95967184204b52af0dc4eb2a0595e6';
-    const apiUrl = 'https://corsproxy.io/?https://api.apileague.com/retrieve-random-meme?';
+// async function changeMeme() {
+//     const apiKey = '8c95967184204b52af0dc4eb2a0595e6';
+//     const apiUrl = 'https://corsproxy.io/?https://api.apileague.com/retrieve-random-meme?';
     
-    const response = await fetch(apiUrl, { headers: {'x-api-key': apiKey}});
+//     const response = await fetch(apiUrl, { headers: {'x-api-key': apiKey}});
+//     const data = await response.json();
+//     console.log(data);
+//         document.querySelector(".memeImgs").src = data.url;
+    
+
+// }
+// changeMeme();
+ async function changeMeme() {
+    const apiUrl = 'https://meme-api.com/gimme';
+    
+    const response = await fetch(apiUrl);
     const data = await response.json();
     console.log(data);
         document.querySelector(".memeImgs").src = data.url;
